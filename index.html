@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <title>Odin Library</title>
+    <header class="header">
+        <div class="header-container">
+            <H1>LIBRARY</H1>
+            <button>Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="add">
+                <button onclick="OpenForm()">+ Add Book</button>
+            </div>
+
+            <div class="library">
+
+            </div>
+
+            <div class="footer">
+                    <a href="https://github.com/GHLara"><img src="imgs/giticon.svg" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <div class="add-form">
+        <button onclick="CloseForm()" class="close">X</button>
+        <form action="" class="form">
+            
+            <label for="title" class="label">Title* <br>
+                <input type="text" placeholder="Title" id="title" name="title" required="required" maxlength="40">
+            </label>
+
+            <label for="author" class="label">Author* <br>
+                <input type="text" placeholder="Author" id="author" name="author" required="required" maxlength="40">
+            </label>
+
+            <label for="pages" class="label">Pages* <br>
+                <input type="number" placeholder="Pages" id="pages" name="pages" required="required" min="1" max="4000">
+            </label>
+
+            <label for="title" class="checkbox">Did you read it?
+                <input type="checkbox" id="read" name="read">
+            </label>
+            <button type="submit" class="add-book">Add Book</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
